@@ -1,0 +1,61 @@
+var jqueryScript = document.createElement('script');
+jqueryScript.src = "//code.jquery.com/jquery-3.3.1.min.js";
+jqueryScript.onload = function(){
+    
+    // Important: change those text according to the text of the following button in your language
+    // e.g in Spanish it would be "Seguido"
+    let unfollowButtonText = "Подписки";
+    // Recently, a new confirmation dialog appears asking if you really want to unfollow the user
+    // change this text as well
+    // e.g in Spanish it would be "Dejar de seguir"
+    let unfollowConfirmationText = "Отменить подписку";
+
+    // Prepare jQuery Selector for buttons that contain "Following"
+    let selector = `button:contains('${unfollowButtonText}')`;
+
+    // You need to wait 60 seconds after every unfollow, otherwise you will
+    // be blocked temporary by the Instagram API and you'll see a 403 error in the network !
+    let currentTime = 0;
+    let step = 35* 1000;
+
+    // Query the button
+    let unfollowButtons = $(selector);
+    // Total of buttons found
+    let totalUnfollowButtons = unfollowButtons.length;
+
+    if(!totalUnfollowButtons){
+        alert("Error: no Following buttons found, maybe change the text of the button?");
+    }
+
+    // Iterate on every button
+    unfollowButtons.each(function(index){
+        let button = $(this);
+
+        setTimeout(function(){
+            (function(i){
+                console.log(`Unfollowing ${i} of ${totalUnfollowButtons}`);
+
+                if(i == totalUnfollowButtons){
+                    console.log("Script finished succesfully !");
+                }
+
+                button.trigger("click");
+
+                // Important: recently, a confirmation dialog was added when  you click
+                // on unfollow, so simply click the confirmation button as well to unfollow the user
+                setTimeout(function(){
+                    var btn = $(`button:contains('${unfollowConfirmationText}')`);
+
+                    if(btn){
+                        btn.trigger("click");
+                    }
+                }, 100);
+            })(index + 1);
+        }, currentTime);
+
+        currentTime += step;
+    });
+};
+
+// Inject Script !
+document.getElementsByTagName('head')[0].appendChild(jqueryScript);
