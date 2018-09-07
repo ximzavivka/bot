@@ -1,7 +1,7 @@
-InstaBot
+Bot
 ========
 
-This Instagram bot was developed with the purpose of making your Instagram profile more visible to people with similar interests.
+This bot was developed with the purpose of making your Instagram profile more visible to people with similar interests.
 The bot will visit hashtag pages of your choice and select photos that meet a certain condition. Then, it visits the owner of
 these photos and if the person meets a 2nd condition, the bot will like its first `n` photos.
 
@@ -21,22 +21,14 @@ Other features:
 ## Setup
 Clone this repository:
 ```
-git clone https://github.com/bmpasini/InstaBot.git
+git clone https://github.com/ximzavivka/InstaBot.git
 ```
 Run the following command to install the dependencies:
 ```
 sudo pip install -r config/dependencies.txt
 ```
 
-Modify the `config/config.yml` file to customize your bot, example:
-```
-CREDENTIALS:
-  USERNAME: 'USERNAME'
-  PASSWORD: 'PASSWORD'
-TAGS: [ 'soccer', 'food', 'dog' ]
-TOTAL_LIKES: 1000
-LIKES_PER_USER: 7
-```
+Modify the `config/config.yml` file to customize your bot
 
 - `CREDENTIALS`: Your login info.
 - `TAGS`: Insert the hashtags you want to target, using the format shown above.
