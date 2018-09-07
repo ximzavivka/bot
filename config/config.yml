@@ -1,12 +1,12 @@
 CREDENTIALS:
-  USERNAME: 'tetiana.steblova'
-  PASSWORD: '1_Makaron'
-TAGS: ['london','teamNikon','followme','communityfirst','iamatraveler','discoverearth','streetphotography','beatifulmatters', 'photooftheday','travel',   'photooftheday','livetravelchannel' ]
+  USERNAME: ''
+  PASSWORD: ''
+TAGS: ['london','teamNikon']
 TOTAL_LIKES: 3000
 TOTAL_FOLLOWS: 4000
 LIKES_PER_USER: 5
 TOTAL_UNFOLLOWS: 3000
 UNWANTED_USER_NAMES_LISTS: ['second', 'stuff', 'art', 'project', 'love', 'life', 'food', 'blog','free', 'keren', 'photo', 'graphy', 'indo', 'travel', 'art', 'shop','store', 'sex', 'toko', 'jual', 'online', 'murah', 'jam', 'kaos','case', 'baju', 'fashion', 'corp', 'tas', 'butik', 'grosir', 'karpet','sosis', 'salon', 'skin', 'care', 'cloth', 'tech', 'rental', 'kamera','beauty', 'express', 'kredit', 'collection', 'impor', 'preloved','follow', 'follower', 'gain', '.id', '_id', 'bags']
 USERS:
-  KEEP: ['281181735','846306216','3644848542','322410954','319125210','35381622','178251163','556671629','5596631160','2957660429','211773573','590944971','1699364415','989756203','1476364059','5514108488','5648729977','975656203','5403198308','1612505156','229170053','3451402160','2052052242','23437602','3620332064','8018081','293849731','33360883','8460701','418239783','194691907','2645499047','10832480','291198416','326279523', '213202988','1516142285','1348708720','7998093', '23390522','11552259','26039132','4749988858','249052112','296788536','1608571008','36277529', '221826337','467052260','3553849088','180128485','3432537', '281181735', '', '5041423', '35558752', '679991360', '8460701','33360883','181760963','14060443','212153384','206617157','7554288','7554288','246752650','144048544','17340925']
-  NEVER_FOLLOW: ['1189302485', '', '5454163', '40825605','197974360']
+  KEEP: ['281122381735','846312106216']
+  NEVER_FOLLOW: ['05630825605','1972294360']
